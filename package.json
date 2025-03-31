@@ -1,5 +1,5 @@
 {
-  "name": "form-devpack",
+  "name": "@lucaserthal/form-devpack",
   "version": "1.0.0",
   "main": "index.js",
   "bin": {
