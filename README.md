@@ -18,7 +18,7 @@ Form DevPack is a streamlined toolkit for setting up form handling in React and 
 This package will override your existing .vscode/project-snippets.code-snippets file. Make sure to back it up if you have any custom snippets.
 
 ```bash
-npx form-devpack
+npx @lucaserthal/form-devpack
 ```
 
 Follow the interactive prompts to select:
