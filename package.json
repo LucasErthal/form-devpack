@@ -6,7 +6,7 @@
     "form-devpack": "./bin/index.js"
   },
   "type": "module",
-  "keywords": [],
+  "keywords": ["cli", "command-line", "npx"],
   "author": "Lucas Erthal",
   "license": "ISC",
   "description": "",
