@@ -71,13 +71,13 @@ export function defaultForm() {
 
 #### Use it with ControlledInput component
 ```tsx
-import { useDefaultForm } from '../hooks/form';
+import { DefaultSchema, useDefaultForm } from '../hooks/form';
 import { ControlledInput } from './shared/controlled-input.component';
 
 export function LoginScreen() {
   const form = useDefaultForm();
 
-  function onSubmit(data: any) {
+  function onSubmit(data: DefaultSchema) {
     console.log(data);
     // Handle form submission
   };
@@ -109,7 +109,7 @@ You can easily extend the provided components and schemas to fit your project's 
 
 ## Requirements
 
-- Node.js 14 or higher
+- Node.js 18 or higher
 - React or React Native project
 
 ## License

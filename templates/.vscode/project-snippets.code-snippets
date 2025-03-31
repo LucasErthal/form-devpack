@@ -11,7 +11,7 @@
       "  email: z.string(),",
       "});",
       "",
-      "type DefaultSchema = z.infer<typeof defaultSchema>;",
+      "export type DefaultSchema = z.infer<typeof defaultSchema>;",
       "",
       "export function useDefaultForm() {",
       "  const {",
