@@ -1,0 +1,32 @@
+{
+  "Zod Form Hook": {
+    "prefix": "form-hook",
+    "body": [
+      "import { zodResolver } from '@hookform/resolvers/zod';",
+      "import { useForm } from 'react-hook-form';",
+      "import { z } from 'zod';",
+      "",
+      "const defaultSchema = z.object({",
+      "  name: z.string().min(3).max(20),",
+      "  email: z.string(),",
+      "});",
+      "",
+      "type DefaultSchema = z.infer<typeof defaultSchema>;",
+      "",
+      "export function useDefaultForm() {",
+      "  const {",
+      "    control,",
+      "    handleSubmit,",
+      "    formState: { errors },",
+      "  } = useForm({ resolver: zodResolver<DefaultSchema>(defaultSchema) });",
+      "",
+      "  return {",
+      "    control,",
+      "    handleSubmit,",
+      "    errors,",
+      "  };",
+      "}"
+    ],
+    "description": "Creates a Zod-based form with react-hook-form."
+  }
+}
