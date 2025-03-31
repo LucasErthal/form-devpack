@@ -45,7 +45,7 @@ inquirer
         process.exit(1);
       }
 
-      // Step 3: Copy Common Files (Everything Except `react/` & `react-native/` & tsconfig.json)
+      // Step 3: Copy Common Files (Everything Except `react/` & `react-native/`)
       function copyCommonFiles(src, dest, exclude = [], excludeFiles = []) {
         fs.readdirSync(src).forEach((file) => {
           const srcPath = path.join(src, file);
@@ -84,7 +84,7 @@ inquirer
         } else {
           if (excludeFiles.includes(path.basename(src))) return; // Skip excluded files
           fs.copyFileSync(src, dest);
-          console.log(`✅ Copied "${path.basename(src)}"`);
+          console.log(`✅ File copied to"${dest}"`);
         }
       }
 
