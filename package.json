@@ -1,0 +1,27 @@
+{
+  "name": "form-devpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "form-devpack": "./bin/index.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "Lucas Erthal",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "fs": "^0.0.1-security",
+    "inquirer": "^12.5.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.12",
+    "@types/react-native": "^0.72.8",
+    "react": "^19.1.0",
+    "react-hook-form": "^7.55.0",
+    "react-native": "^0.78.1"
+  }
+}
