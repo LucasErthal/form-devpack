@@ -59,12 +59,12 @@ inquirer
             copyCommonFiles(srcPath, destPath, [], excludeFiles); // Recursively copy directories
           } else {
             fs.copyFileSync(srcPath, destPath);
-            console.log(`✅ Copied "${file}"`);
+            console.log(`✅ File copied to "${dest}"`);
           }
         });
       }
 
-      copyCommonFiles(templateDir, targetDir, ["react", "react-native"], []);
+      copyCommonFiles(templateDir, targetDir, ["react", "react-native"]);
 
       // Step 4: Copy the Selected Template Files
       const selectedTemplateDir = path.join(templateDir, projectType.toLowerCase().replace(" ", "-"));
@@ -84,11 +84,11 @@ inquirer
         } else {
           if (excludeFiles.includes(path.basename(src))) return; // Skip excluded files
           fs.copyFileSync(src, dest);
-          console.log(`✅ File copied to"${dest}"`);
+          console.log(`✅ File copied to "${dest}"`);
         }
       }
 
-      copyRecursive(selectedTemplateDir, targetDir, ["tsconfig.json"]);
+      copyRecursive(selectedTemplateDir, targetDir);
 
       console.log(`🎉 ${projectType} setup complete!`);
     } catch (error) {

@@ -1,6 +1,6 @@
 {
   "name": "@lucaserthal/form-devpack",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "bin": {
     "form-devpack": "./bin/index.js"
@@ -20,9 +20,7 @@
   "devDependencies": {
     "@types/react": "^19.0.12",
     "@types/react-native": "^0.72.8",
-    "react": "^19.1.0",
-    "react-hook-form": "^7.55.0",
-    "react-native": "^0.78.1"
+    "react-hook-form": "^7.55.0"
   },
   "preferGlobal": true
 }
