@@ -14,9 +14,6 @@ Form DevPack is a streamlined toolkit for setting up form handling in React and 
 
 ## Installation
 
-### !!!WARNING!!! 
-This package will override your existing .vscode/project-snippets.code-snippets file. Make sure to back it up if you have any custom snippets.
-
 ```bash
 npx @lucaserthal/form-devpack
 ```
@@ -37,7 +34,7 @@ Form DevPack automatically installs and configures:
 
 - **ControlledInput**: A wrapper component that connects your input fields to React Hook Form
 - **CustomInput**: A base input component that can be styled according to your needs
-- **Form schemas**: Pre-configured form using Zod schemas and React Hook Form as 'form-hook' snippet
+- **Form schemas**: Pre-configured form using Zod schemas and React Hook Form as 'form-hook' snippet for vscode. If youre not using vscode, you can just delete the .vscode folder.
 
 ## Usage Example
 
